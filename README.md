@@ -11,31 +11,52 @@ Super Simple Router.
 
 ## 💾 Installation
 
-```
+直接
+
+```JS
 <script src='ssr.js'></script>
 ```
 
-或者 NPM(TODO)
+或者 NPM
+
+```BASH
+npm i @lqs469/ssr -S
+```
 
 ## :feet: Usage
 
-```js
+无障碍实现功能, 实现功能只在需要的路由的组件加了一个`path`. [这有一个简单的 Demo]('./demo')
+
+HTML:
+
+```html
 <a href=''>Index</a>
 <a href='#a'>A</a>
-<a href='#b'>B</a>
-<a href='#c/3/4?test=1'>C</a>
+<a href='#b/3/4?test=1'>C</a>
 
 <div path='/'>Index</div>
 <div path='a'>A</div>
-<div path='b'>B</div>
-<div path='c/:i/:j'>C</div>
+<div path='b/:i/:j'>C</div>
 ```
 
-无障碍实现功能, 实现功能只在需要的路由的组件加了一个`path`
+JS:
+
+```js
+// ES:
+import ssr from '@lqs469/ssr'
+
+// 跳转钩子
+// 点击 <a href='#b/3/4?test=1'>C</a> 跳转之后触发:
+ssr.didChange(['b/:i/:j'], (props, search) => {
+  // path: { i: '3', j: '4' }
+  // serach:{ test: '1' }
+  ...
+})
+```
 
 ## TODO
 
-* [ ] npm
+* [x] npm
 * [ ] 嵌套?
 * [ ] regex?
 * [ ] match method?
