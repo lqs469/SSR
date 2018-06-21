@@ -25,7 +25,7 @@ npm i @lqs469/ssr -S
 
 ## :feet: Usage
 
-无障碍实现功能, 实现功能只在需要的路由的组件加了一个`path`. [这有一个简单的 Demo]('./demo')
+无障碍实现功能, 实现功能只在需要的路由的组件加了一个`path`. [这有一个简单的 Demo](https://github.com/lqs469/SSR/tree/master/demo)
 
 HTML:
 
