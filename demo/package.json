@@ -1,0 +1,19 @@
+{
+  "name": "demo",
+  "version": "1.0.1",
+  "description": "ssr demo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "author": "lqs469",
+  "license": "ISC",
+  "dependencies": {
+    "@lqs469/ssr": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

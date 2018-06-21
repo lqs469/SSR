@@ -1,0 +1,21 @@
+{
+  "name": "@lqs469/ssr",
+  "version": "1.0.0",
+  "description": "Super Simple Router",
+  "main": "ssr.js",
+  "files": ["ssr.js"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lqs469/SSR.git"
+  },
+  "keywords": ["router"],
+  "author": "lqs469",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lqs469/SSR/issues"
+  },
+  "homepage": "https://github.com/lqs469/SSR#readme"
+}

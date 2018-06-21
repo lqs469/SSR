@@ -85,14 +85,14 @@ let ssr = {
   }
 })()
 
-// if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-//   module.exports = ssr
-// } else {
-//   if (typeof define === 'function' && define.amd) {
-//     define([], function() {
-//       return ssr
-//     })
-//   } else {
-//     window.ssr = ssr
-//   }
-// }
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = ssr
+} else {
+  if (typeof define === 'function' && define.amd) {
+    define([], function() {
+      return ssr
+    })
+  } else {
+    window.ssr = ssr
+  }
+}

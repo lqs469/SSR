@@ -18,10 +18,5 @@
   <h1 path='c/:i/:j'>C<br /><code id='loca'></code></h1>
 </body>
 
-<script src='./ssr.js'></script>
-<script>
-ssr.didChange(['c/:i/:j'], (props, search) => {
-  document.getElementById('loca').innerHTML = `path: ${JSON.stringify(props)}<br /> serach:${JSON.stringify(search)}`
-})
-</script>
+<script src='./bundle.js'></script>
 </html>
